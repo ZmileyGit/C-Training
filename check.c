@@ -32,7 +32,7 @@ int main(){
                 --parentheses;
                 if(parentheses < 0){
                     parentheses_error = TRUE;
-                    printf("Closing parentheses before opening onr at Line %d, Column %d\n",lines+1,column+1);
+                    printf("Closing parentheses before opening one at Line %d, Column %d\n",lines+1,column+1);
                 }
             }else if(cursor == '"'){
                 status = IN_STRING;
