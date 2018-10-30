@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define SIZE 10000
+#define SIZE 1000000
 
 int book(int needle,int haystack[],int length);
 int challenge(int needle,int haystack[],int length);
@@ -10,7 +10,7 @@ int main(){
     for(int count = 0;count < SIZE;++count){
         haystack[count] = count;
     }
-    printf("%d\n",book(9999,haystack,SIZE));
+    printf("%d\n",challenge(700,haystack,SIZE));
     return 0;
 }
 
@@ -40,7 +40,7 @@ int challenge(int needle, int haystack[], int length){
     low = 0;
     high = length - 1;
 
-    while(low <= high && haystack[(middle = low + (high - low)/2)] != needle){
+    while(haystack[(middle = low + (high - low)/2)] != needle && low < high){
         if(needle > haystack[middle]){
             low = middle + 1;
         }else{
