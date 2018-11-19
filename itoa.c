@@ -22,7 +22,7 @@ int main(){
     itoa(0,buffer,BUFFER_SIZE);
     printf("%s\n",buffer);
 
-    pitoa(INT_MIN,buffer,BUFFER_SIZE,100);
+    pitoa(INT_MIN,buffer,BUFFER_SIZE,20);
     printf("%s\n",buffer);
 
     return 0;
