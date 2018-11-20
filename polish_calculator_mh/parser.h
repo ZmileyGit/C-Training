@@ -1,0 +1,1 @@
+int get_next_oper(char buffer[],int size);
